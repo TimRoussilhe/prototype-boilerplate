@@ -123,8 +123,6 @@ class Component {
 	 */
     initComponent() {
         this.render();        
-        setTimeout(::this.onRender, 0);
-        
     }
 
     onRender() {
@@ -305,7 +303,8 @@ class Component {
 	 */
     render() {
         // Default components just need to scope a piece of DOM from constructor
-        this.setElement();        
+        this.setElement();
+        setTimeout(::this.onRender, 0);        
     }
 
 	/**
