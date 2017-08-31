@@ -1,0 +1,9 @@
+@import "variables/variables.scss";
+@import "components/component.scss";
+@import "mixins/reset.scss";
+
+h1{
+    color: blue;
+    transition: opacity 0.5s ease-in-out;
+    font-size: 200px;
+}
