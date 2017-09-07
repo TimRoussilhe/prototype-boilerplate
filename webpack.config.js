@@ -81,7 +81,7 @@ if (PROD) {
 				use: [ 
 				{ 
 					loader: 'css-loader', 
-					options: { importLoaders: 1, modules: true }
+					options: { importLoaders: 1}
 				},
 					{ 
 					loader: 'postcss-loader',

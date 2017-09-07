@@ -1,11 +1,10 @@
-// import App from './app/app';
+import App from './app/app';
 import 'app.scss';
 
 class Main {
 	onReady() {
-		// const app = new App();
-		// app.init();
-        console.log('Hello World');
+		const app = new App();
+		app.init();
     }
 }
 

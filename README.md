@@ -30,10 +30,28 @@ Singleton that can be used as a global state manager, perfect to deal with resiz
 
 ##### DOMComponent.js
 es6 classes abstarct DOM components
-- States
-- All Promises
-- Events objetc declaration
-- Unique ID
-- Lyfecycle : init > initComponent > render > onRender > initDOM / setupDOM / delegateEvents > onDOMInit > bindEvents / bindGlobalStoreEvents / onInit > init.resolve() 
-- Animation Lifecycle : show > showComponent > onShown
+ - States
+ - All Promises
+ - Events objetc declaration
+ - Unique ID
+ - Lyfecycle : 
+	
+ - init
+ - initComponent
+ - render
+ - onRender
+ - initDOM ( scope selectors etc... )
+ - setupDOM ( initial state )
+ - delegateEvents ( if you used built-in events objects support )
+ - onDOMInit
+ - bindEvents
+ - bindGlobalStoreEvents
+ - onInit > init.resolve() 
+ - List item
 
+Animation Lifecycle
+ - show ( setup promise )
+ - showComponent ( here is the best part to do your custom overriding )
+ - onShown 
+
+----------
